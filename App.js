@@ -12,7 +12,7 @@ mongoose.connect("mongodb+srv://solarisknight:wolf@cluster0.fjloxgx.mongodb.net/
 })
 const App = express()
 App.use(cors())
-App.listen(3001,()=>{
+App.listen(process.env.PORT,()=>{
     console.log("Node App running on port 3001")
 });
 //getting server response
