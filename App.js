@@ -33,7 +33,7 @@ App.post("/register", async(req,res)=>{
     }
 })
 //get method to fetch datas from the server
-App.get("/login",async(req,res)=>{
+App.get("/get",async(req,res)=>{
     try {
         const fetchedData = await regSchema.find()
         res.status(200).json(fetchedData)
