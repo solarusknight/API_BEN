@@ -32,7 +32,7 @@ App.post("/register", async(req,res)=>{
         console.log("Couldn't Store datas into the servers")
     }
 })
-get method to fetch datas from the server
+//get method to fetch datas from the server
 App.get("/login",async(req,res)=>{
     try {
         const fetchedData = await regSchema.find()
