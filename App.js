@@ -32,17 +32,17 @@ App.post("/register", async(req,res)=>{
         console.log("Couldn't Store datas into the servers")
     }
 })
-//get method to fetch datas from the server
-// App.get("/login",async(req,res)=>{
-//     try {
-//         const fetchedData = await regSchema.find()
-//         res.status(200).json(fetchedData)
-//         console.log(fetchedData)
-//     } catch (error) {
-//         res.status(400).json({message:"Couldn't fetch datas from the server"})
-//         console.log("Couldn't fetch datas from the server")
-//     }
-// })
+get method to fetch datas from the server
+App.get("/login",async(req,res)=>{
+    try {
+        const fetchedData = await regSchema.find()
+        res.status(200).json(fetchedData)
+        console.log(fetchedData)
+    } catch (error) {
+        res.status(400).json({message:"Couldn't fetch datas from the server"})
+        console.log("Couldn't fetch datas from the server")
+    }
+})
 
 App.post("/login",async(req,res)=>{
     try {
